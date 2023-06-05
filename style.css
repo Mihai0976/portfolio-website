@@ -14,14 +14,16 @@ body{
 #header{
  width: 100%;
  height: 100vh;
- /*background-image: url(images/myPic.jpg);*/
+ background-image: url(images/myPic1.jpg);
  background-color: #080808;
  background-size: cover;
  background-position: center;
+ align-items: flex-start;
 }
 
 .container {
  padding: 10px 10%;
+ background-repeat: no-repeat;
 }
 /*-----nav section-----*/
 nav {
@@ -32,7 +34,8 @@ nav {
 }
 
 .logo {
- width: 600px;
+ width: 340px;
+ align-content:flex-start;
 }
 
 nav ul li {
@@ -372,7 +375,7 @@ form .btn2 {
 
 /*-------- css for small screens--------*/
 nav .fas {
- display: block;
+ display: none;
 }
 @media only screen and(max-width: 600px){
  #header{
@@ -426,7 +429,7 @@ nav .fas {
 }
 @media only screen and (max-width: 600px){ 
   #header{
-    background-image: url('images/phone-background.png');
+    background-image: url('images/myPic.jpg');
   }
   .header-text{
     margin-top: 100%;
@@ -445,11 +448,12 @@ nav ul{
   background: #ff004f;
   position: fixed;
   top: 0;
-  right: -200px;
-  width:200px;
+  right: -300px;
+  width:180px;
   height: 100vh;
   padding-top: 50px;
   z-index: 2;
+  transition: right 0.5s;
 }
 
 nav ul li{
@@ -466,8 +470,13 @@ nav ul .fas{
 nav .fa-bars {
   position: absolute;
   top: 25px;
-  right: 25px;
+  right: 5px;
   cursor: pointer;
 }
 
+}
+#msg{
+  color: #61b752;
+  margin-top: -40px;
+  display: block;
 }
