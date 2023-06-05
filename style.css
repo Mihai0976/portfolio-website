@@ -439,7 +439,11 @@ nav .fas {
   .header-text h1{
     font-size: 30px;
   }
-
+.sub-title {
+  font-size: 40px;
+  font-weight: 400;
+  color: #fff;
+}
  nav .fas {
    display: block;
    font-size: 25px;
