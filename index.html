@@ -17,10 +17,10 @@
          <img src="images/myLogo.png" alt="" class="logo">
          <ul id="sidemenu">
            <li><a href="#">Home</a></li>
-           <li><a href="#">About</a></li>
-           <li><a href="#">Services</a></li>
-           <li><a href="#">Po rtfolio</a></li>
-           <li><a href="#">Contact</a></li>
+           <li><a href="#about" onclick="scrollToElement('about')">About</a></li>
+           <li><a href="#services" onclick="scrollToElement('services')">Services</a></li>
+           <li><a href="#portfolio" onclick="scrollToElement('portfolio')">Portfolio</a></li>
+           <li><a href="#contact" onclick="scrollToElement('contact')">Contact</a></li>
            <i class="fas fa-times" onclick="closemenu()"></i>
          </ul>
         <i class="fas fa-bars" onclick="openmenu()"></i>
@@ -37,7 +37,7 @@
     <div class="container">
       <div class="row">
         <div class="about-col-1">
-        <img src="images/" alt="" style="width: 300px; height:400px">
+        <img src="images/smallpic.png" style="width: 300px; height:400px">
       </div>
       <div class="about-col-2">
         <h1 class="sub-title">About Me</h1>
@@ -76,6 +76,7 @@
       </div>
      </div>
     </div>
+  <a href="#header" onclick="scrollToElement('header')" class="btn">Home</a>
    </div>
    <!--------- End of About Section-------------->
 
@@ -86,26 +87,25 @@
       <div class="services-list">
        <div>
         <i class="fa-brands fa-html5"></i> &nbsp<i class="fa-brands fa-css3"></i>&nbsp<i class="fa-brands fa-js"></i>
-        <h2>Frontend Applications</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi similique delectus soluta voluptates aspernatur mollitia dolorem laborum, nostrum officiis natus.</p>
+        <h2>Frontend </h2>
+        <p>Build responsive frontend of  web application with HTML, CSS, JavaScript and ReactJS.</p>
         <a href="#">Learn more</a>
        </div>
        <div>
          <i class="fa-brands fa-node"></i>&nbsp<i class="fa-brands fa-js"></i>
-         <h2>Backend Applications</h2>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi similique delectus soluta voluptates aspernatur
-         mollitia dolorem laborum, nostrum officiis natus.</p>
+         <h2>Backend</h2>
+         <p>Develop functionality for web application with NodeJS.</p>
         <a href="#">Learn more</a>
        </div>
        <div>
         <i class="fa-brands fa-html5"></i> &nbsp<i class="fa-brands fa-css3"></i>&nbsp<i class="fa-brands fa-js"></i>&nbsp<i class="fa-brands fa-node"></i>
         <h2>Fullstack Applications</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi similique delectus soluta voluptates aspernatur
-         mollitia dolorem laborum, nostrum officiis natus.</p>
+        <p>Develop boath the frontend, backend and database design for web applications. Create nice and secure API with : HTML, CSS, ReactJS, JavaScript, NodeJS and MySQl</p>
         <a href="#">Learn more</a>
        </div>
       </div>
     </div>
+    <a href="#header" onclick="scrollToElement('header')" class="btn">Home</a>
    </div>
    <!--------- End of services section ------------->
 
@@ -117,31 +117,32 @@
        <div class="work">
          <img src="images/work-1.png" alt="">
          <div class="layer">
-           <h3>Social Media App</h3>
-           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus inventore fugit corporis iste beatae    aspernatur quibusdam eos nesciunt recusandae at?</p>
-           <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+           <h3>Tricell</h3>
+           <p>The project focuses on scientific research pertaining to the creation of viruses and antiviruses. It involves the
+          development of a comprehensive database that encompasses personal information and virus-related data. The application
+          itself is built using HTML, CSS, and JavaScript for the frontend, while the backend is implemented in Node.js.
+          Additionally, Microsoft Access has been utilized as the database management system.</p>
+           <a href="https://github.com/Mihai0976/tricell-school-project"><i class="fa-solid fa-up-right-from-square"></i></a>
          </div>
        </div>
        <div class="work">
         <img src="images/work-2.png" alt="">
         <div class="layer">
-          <h3>E-Commerce App</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus inventore fugit corporis iste beatae
-           aspernatur quibusdam eos nesciunt recusandae at?</p>
-          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          <h3>Beginers Projects</h3>
+          <p>Small projects using JavaScript, HTML, and CSS</p>
+          <a href="https://github.com/Mihai0976/mihais-JavaScript-beginer"><i class="fa-solid fa-up-right-from-square"></i></a>
         </div>
        </div>
        <div class="work">
         <img src="images/work-3.png" alt="">
         <div class="layer">
          <h3>Banking-System App</h3>
-         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus inventore fugit corporis iste beatae
-          aspernatur quibusdam eos nesciunt recusandae at?</p>
-         <a href="https://sv-se.facebook.com/"><i class="fa-solid fa-up-right-from-square"></i></a>
+         <p>The project is about creating banking system that alows a user to create one account, login in the account, update personal data, apply for a bank loan and olso the posibility to erase own user account. For the front end i have used ReactJs for the backend NodeJS and for the database management system i have used MySQl.</p>
+         <a href="https://github.com/Mihai0976/bank-app"><i class="fa-solid fa-up-right-from-square"></i></a>
         </div>
        </div>
      </div>
-     <a href="#" class="btn">SeeMore</a>
+    <a href="#header" onclick="scrollToElement('header')" class="btn">Home</a>
     </div>
    </div>
    <!--------- End of portfolio section -------------->
@@ -167,9 +168,10 @@
         <input type="text" name="Name" placeholder="Your Name" required>
         <input type="text" name="Email" placeholder="Your Email" required>
         <textarea name="Message"rows="6" placeholder="Your Message"></textarea>
-        <button type="submit" class="btn btn2" >Submit</button>
+        <button type="submit" class="btn btn2" >Submit</button> <a href="#header" onclick="scrollToElement('header')" class="btn">Home</a>
        </form>
        <span id="msg"></span>
+       
       </div>
      </div>
    </div>
@@ -224,4 +226,35 @@
       .catch(error => console.error('Error!', error.message))
   })
 </script>
+<script>
+  function scrollToElement(targetId) {
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    }
+  // Smooth scrolling for anchor links
+  const anchorLinks = document.querySelectorAll('a[href^="#"]');
+
+  for (const anchorLink of anchorLinks) {
+    anchorLink.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const targetId = anchorLink.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    });
+  }
+</script>
+
+
 </html>
